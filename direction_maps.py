@@ -1,6 +1,6 @@
 ### pip install -U googlemaps
 
-import googlemaps
+import googlemaps, os
 from datetime import datetime
 
 gmaps = googlemaps.Client(key=os.getenv('gmapsAPI'))
