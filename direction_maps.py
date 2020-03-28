@@ -11,5 +11,6 @@ directions_result = gmaps.directions("Sydney Town Hall",
                                      "Parramatta, NSW",
                                      mode="driving",
                                      departure_time=now,
-                                     alternatives=False)
+                                     alternatives=False, 
+                                     optimize_waypoints=True)
 print(directions_result)
