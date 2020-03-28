@@ -1,0 +1,5 @@
+# git fetch https://github.com/danielkong365/whatsMapp
+# git pull https://github.com/danielkong365/whatsMapp
+# gcloud app deploy app.yaml \
+    --project \
+    whatsmapp-rowdyhacks2020
