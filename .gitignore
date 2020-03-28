@@ -19,7 +19,7 @@ docs/_build/
 .vscode
 
 myenv/
-
+venv/
 # Coverage reports
 htmlcov/
 .coverage
