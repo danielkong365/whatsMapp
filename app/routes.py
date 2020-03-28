@@ -18,3 +18,9 @@ def sms_ahoy_reply():
 
     return str(resp)
 
+@app.route("/directions", methods=['GET'])
+def getDirections():
+	start = request.args.get('start')
+	end = request.args.get('end')
+	return '''<h1>Hello MoFo. You goin from {} to {}</h1>'''.format(start, end)
+
