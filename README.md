@@ -13,7 +13,7 @@ RowdyHacks 2020 Project
 
 ## What we learned
 
-## What's next for Going Hungry
+## What's next for whatsMapp
 
 ## Built With
 
