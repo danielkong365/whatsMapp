@@ -1,6 +1,6 @@
 ### pip install -U googlemaps
 
-import googlemaps, os
+import googlemaps
 from datetime import datetime
 
 gmaps = googlemaps.Client(key=os.getenv('gmapsAPI'))
@@ -9,6 +9,7 @@ gmaps = googlemaps.Client(key=os.getenv('gmapsAPI'))
 now = datetime.now()
 directions_result = gmaps.directions("Sydney Town Hall",
                                      "Parramatta, NSW",
-                                     mode="transit",
-                                     departure_time=now)
+                                     mode="driving",
+                                     departure_time=now,
+                                     alternatives=False)
 print(directions_result)
