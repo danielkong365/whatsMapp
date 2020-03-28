@@ -1,6 +1,6 @@
 from app import app
 from flask import request
-from twilio.twiml.messaging_response import MessagingReponse
+from twilio.twiml.messaging_response import MessagingResponse
 
 @app.route('/')
 @app.route('/index')
