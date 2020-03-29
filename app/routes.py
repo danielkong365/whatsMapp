@@ -31,8 +31,8 @@ def getDirections():
 
 
 	now = datetime.now()
-	directions_result = gmaps.directions("Oradell Public School",
-										 "683 Briarwood Ct Oradell NJ",
+	directions_result = gmaps.directions(start,
+										 end,
 										 mode="driving",
 										 departure_time=now,
 										 alternatives=False, 
@@ -43,6 +43,7 @@ def getDirections():
 
 	steps = legs['steps']
 	step_directions = []
+	step_directions.append("Total Travel: {} ({})".format(total_distance, total_time))
 	clean = re.compile('<.*?>')
 	div_clean = re.compile('<div.*?>')
 	tag = "for"
