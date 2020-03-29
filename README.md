@@ -16,14 +16,15 @@ Our application is hosted on Google App Engine using Python as our backend. We u
 * How to send multiple, long text messages to the same user, in order.
 
 ## Accomplishments that we're proud of
-* Getting the text messages to look formatted
-* Getting the server to actually respond to the requests
+* Directions are provided quickly and in a readable format
 * Getting long directions to send to the same user over multiple texts.
+* There is no limitation for length of route
 
 ## What we learned
 * How to design a control flow for Twilio
 * How to host a Python backend on Google App Engine
 * How to enable APIs for use in Google Cloud Platform
+* How to parse json and utilize Google Maps API
 
 ## What's next for whatsMapp
 * Using the Places API to enable a preliminary 'Search for what's near me' type of service
@@ -31,6 +32,9 @@ Our application is hosted on Google App Engine using Python as our backend. We u
 
 ## Built With
 Google Maps Directions API, Google Cloud App Engine, Python, Twilio API
+
+## Try it out
+Check out our video link demo for the instructions on how to test it out!
 
 ## Try it out
 Check out our video link demo for the instructions on how to test it out!
