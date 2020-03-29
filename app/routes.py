@@ -43,7 +43,7 @@ def getDirections():
 
 	steps = legs['steps']
 	step_directions = ""
-	step_directions += "Total Travel: {} ({})%0a%0a".format(total_distance, total_time)
+	step_directions += "Total Travel: {} ({})\n\n".format(total_distance, total_time)
 	clean = re.compile('<.*?>')
 	div_clean = re.compile('<div.*?>')
 	tag = "for"
@@ -51,9 +51,9 @@ def getDirections():
 		distance = step['distance']['text']
 		time = step['duration']['text']
 		instruction = step['html_instructions']
-		instruction = re.sub(div_clean, '%0a', instruction)
+		instruction = re.sub(div_clean, '\n', instruction)
 		instruction = re.sub(clean, '', instruction)
-		parsed_step = "In {} ({}), {}%0a%0a".format(distance, time, instruction)
+		parsed_step = "In {} ({}), {}\n\n".format(distance, time, instruction)
 		step_directions += parsed_step
 		print(parsed_step)
 	step_directions += "You have arrived!"
