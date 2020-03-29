@@ -1,6 +1,6 @@
 # whatsMapp
 RowdyHacks 2020 Project
-By Daniel Kong, Brett Landau, and Julie Wang
+By Daniel Kong(DanDan#9134), Brett Landau(blands89#8127), and Julie Wang(Pikachi#8489)
 
 ## Inspiration
 Have you ever gotten lost, but don't have enough data to run Google Maps or no internet signal? whatsMapp aims to eliminate that problem by giving you another way to access directions the old-fashioned way: step by step directions. Throwback to the days of printing step by step directions from Google Maps BEFORE leaving the house. And now, these directions can be delivered to you by text when you need it!
