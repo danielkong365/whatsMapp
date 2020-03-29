@@ -26,3 +26,4 @@ htmlcov/
 .coverage.
 testMessage.py
 
+app/notes
