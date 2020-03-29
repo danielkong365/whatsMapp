@@ -80,7 +80,7 @@ def getNext():
 	dest.close()
 	src = open(temp,"r")
 	dest = open(myfile,"w")
-	output = src.read(160)
+	output = src.read(1000)
 	shutil.copyfileobj(src,dest)
 	src.close()
 	dest.close()
