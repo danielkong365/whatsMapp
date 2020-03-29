@@ -9,21 +9,23 @@ Have you ever gotten lost, but don't have enough data to run Google Maps or no i
 It allows a user to text for step by step directions between place A and place B using their messaging service instead of data. 
 
 ## How we built it
-Our application is hosted on Google App Engine using Flask. We used Twilio for the messaging and response capabilities. We are using the Google Maps Directions API to extract the step by step directions between places. Everything is written using Python.
+Our application is hosted on Google App Engine and is written in Python. We used Twilio for the messaging and response capabilities. We are using the Google Maps Directions API to extract the step by step directions between places.
 
 ## Challenges we ran into
-* designing the control flow
-* how to parse the jsn
-* enabling and connecting everything
+* Designing the control flow
+* How to parse the json
+* Enabling and connecting everything
 
 ## Accomplishments that we're proud of
+* Directions are provided quickly and in a readable format
+* There is no limitation for length of route
 
 ## What we learned
+* Learned how to use App Engine and Twilio
+* Learned how to parse json and utilize Google Maps API
 
 ## What's next for whatsMapp
+* Allow users to search for points of interest if they don't yet know where they're going
 
 ## Built With
 Google Maps API, Google Cloud App Engine, Python, Flask, Twilio API
-
-## Try it out
-Text ........ 
