@@ -34,7 +34,5 @@ Our application is hosted on Google App Engine using Python as our backend. We u
 Google Maps Directions API, Google Cloud App Engine, Python, Twilio API
 
 ## Try it out
-Check out our video link demo for the instructions on how to test it out!
+Check out our video link demo on Devpost for the instructions on how to test it out!
 
-## Try it out
-Check out our video link demo for the instructions on how to test it out!
