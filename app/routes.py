@@ -3,8 +3,12 @@ from flask import request
 from twilio.twiml.messaging_response import MessagingResponse
 import googlemaps, os
 from datetime import datetime
+from random import seed
+from random import randint
+seed(1234)
 import json
 import re
+import shutil
 
 @app.route('/')
 @app.route('/index')
@@ -35,7 +39,7 @@ def getDirections():
 										 end,
 										 mode="driving",
 										 departure_time=now,
-										 alternatives=False, 
+										 alternatives=False,
 										 optimize_waypoints=True)
 	legs = directions_result[0]['legs'][0]
 	total_distance = legs['distance']['text']
@@ -57,5 +61,27 @@ def getDirections():
 		step_directions += parsed_step
 		print(parsed_step)
 	step_directions += "You have arrived!"
-	return step_directions
+	fName = str(randint(1000,9999))
+	op = open(fName,"w")
+	op.write(step_directions)
+	op.close()
+	return fName
 
+
+@app.route("/getnext", methods=['GET'])
+def getNext():
+	id = request.args.get('id')
+	myfile = id
+	temp = "temp"
+	src = open(myfile,"r")
+	dest = open(temp,"w")
+	shutil.copyfileobj(src,dest)
+	src.close()
+	dest.close()
+	src = open(temp,"r")
+	dest = open(myfile,"w")
+	output = src.read(160)
+	shutil.copyfileobj(src,dest)
+	src.close()
+	dest.close()
+	return output
