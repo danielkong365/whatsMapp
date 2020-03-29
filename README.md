@@ -1,4 +1,4 @@
-# whatsMapp
+# WhatsMapp
 RowdyHacks 2020 Project
 By Daniel Kong(DanDan#9134), Brett Landau(blands89#8127), and Julie Wang(Pikachi#8489)
 
